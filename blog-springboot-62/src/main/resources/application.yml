@@ -1,0 +1,34 @@
+spring:
+  mvc:
+   view:
+     prefix: WEB-INF/jsp/
+     suffix: .jsp
+
+  datasource:
+    url: jdbc:mysql://148.70.58.76:2798/blog?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: jxh@943935817
+    driver-class-name: com.mysql.jdbc.Driver
+    
+  resources: 
+    staticLocations: file:d:/fish/
+    
+  mail:
+    host: smtp.qq.com
+    username: 943935817@qq.com
+    password: pwfcnqduxscwbejf
+    defalut-encoding: UTF-8
+  
+#日志配置
+logging:
+  level:
+   com:
+    yc:
+     blog:
+      dao: debug
+      web: warn
+
+#自定义属性以谁来发邮件
+mail:
+  fromMail:
+    addr: 943935817@qq.com   
